@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stor | cart</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- start-header -->
+    <header>
+        <!-- top-header -->
+        <div class="top-header d-flex align-items-center py-2 d-sm-block">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-6 col-md-4  ">
+                        <a href=""><img width="150" src="image/logo.png" alt="logo"></a>
+                    </div>
+
+                    <div class="col-6 col-md-4 ">
+                        <input class="form-control" type="text" placeholder="اكتب اسم المنتج للبحث عنه">
+                    </div>
+
+                    <div class="col-md-4 left-header d-flex align-items-center justify-content-end d-none d-lg-flex ">
+                        <a data-bs-toggle="offcanvas" href="#cart" role="button" aria-controls="offcanvasExample">
+                            <span>السلة</span>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <a data-bs-toggle="offcanvas" href="#login" role="button" aria-controls="offcanvasExample">
+                            <span>الدخول</span>
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <a href="">
+                            <span>المفضلة</span>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- buttom-header -->
+        <div class="buttom-header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div>
+                        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <button class="navbar-toggler menu-icon" type="button" data-bs-toggle="offcanvas" href="#login">
+                            <i class="fa-solid fa-user"></i>
+                        </button>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الحواسيب</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الهواتف</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">السماعات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">التابات</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="category.html">الاكسسوارات والملحقات</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <!-- end-header -->
+
+    <!-- start bunner -->
+    <section class="bunner">
+        <h1 class="cat-title"> سلة المشتريات</h1>
+
+    </section>
+    <!-- end bunner -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8">
+                <div class=" row-min-card ">
+
+                    <div class=" mini-card d-flex justify-content-between align-items-center px-3">
+                        <p class="cart-products-title">
+                            المنتج
+                        </p>
+                        <p class="cart-products-title">السعر</p>
+                        <p class="cart-products-title">
+                            الكمية
+                        </p>
+                        <p class="cart-products-title">الاجمالي</p>
+                    </div>
+
+
+                    <div class=" mini-card d-flex justify-content-between align-items-center px-3">
+                        <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                            <img class="img-fluid " width="70px" src="image/products/7.jpg" alt="">
+                            <p>ايفون 12  </p>
+                        </div>
+                        <p>250$</p>
+                        <div class="btn-group btns-quantity-mini">
+                            <button class="btn ">+</button>
+                            <button class="btn ">1</button>
+                            <button class="btn ">-</button>
+                        </div>
+                        <p>250$</p>
+                    </div>
+                    <div class=" mini-card d-flex justify-content-between align-items-center px-3">
+                        <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                            <img class="img-fluid " width="70px" src="image/products/acc/market-headphones-2.jpg" alt="">
+                            <p>headphone</p>
+                        </div>
+                        <p>300$</p>
+                        <div class="btn-group btns-quantity-mini">
+                            <button class="btn ">+</button>
+                            <button class="btn ">1</button>
+                            <button class="btn ">-</button>
+                        </div>
+                        <p>300$</p>
+                    </div>
+                    <div class=" mini-card d-flex justify-content-between align-items-center px-3">
+                        <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+                            <img class="img-fluid " width="70px" src="image/products/laptop/Product-1-1.jpg" alt="">
+                            <p> laptop </p>
+                        </div>
+                        <p>400$</p>
+                        <div class="btn-group btns-quantity-mini">
+                            <button class="btn ">+</button>
+                            <button class="btn ">1</button>
+                            <button class="btn ">-</button>
+                        </div>
+                        <p>400$</p>
+                    </div>
+                </div>
+
+                <div class="code d-flex mt-3 gap-2">
+                    <input type="text" class="form-control w-25">
+                    <button class="btn btn-primary">تطبيق الكوبون</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="summery mt-5">
+                    <h4 class="cart-products-title mb-3">ملخص سلة المشتريات</h4>
+                    <div class="d-flex justify-content-between cart-item">
+                        <p>المجموع</p>
+                        <p>950$</p>
+                    </div>
+                    
+                    
+                    <div class="d-flex justify-content-between cart-item">
+                        <p>قيمة الخصم</p>
+                        <p>50$</p>
+                    </div>
+                    
+                    
+                    <div class="d-flex justify-content-between cart-item">
+                        <p>الاجمالي</p>
+                        <p>900$</p>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between ">
+                        <a href="./index.html"><button class="btn btn-primary">العودة للمتجر</button></a>
+                        <a href="./checkout.html"><button class="btn btn-danger  ">  اتمام الطلب</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start footer-->
+    <footer>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col f1 mb-3">
+                    <img class="w-75" src="image/logo-white.png" alt="logo">
+                    <p class="text-white">
+                        متجرنا بالجودة والخامة النظيفة
+                    </p>
+                    <ul class="navbar-nav text-white">
+                        <li><i class="fa-solid fa-location-dot">سوريا حلب</i></li>
+                        <li><i class="fa-solid fa-phone"> 0941734301</i></li>
+                        <li><i class="fa-solid fa-envelope"> stor@gmail.com</i></li>
+                    </ul>
+                </div>
+                <div class="col f2 mb-3 links">
+                    <h3>أهم الروابط</h3>
+                    <ul class="navbar-nav ">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="./cart.html">السلة</a></li>
+                        <li><a href="./product.html">المنتجات</a></li>
+                        <li><a href="./checkout.html">الشراء</a></li>
+                    </ul>
+                </div>
+                <div class="col f3 mb-3 classes">
+                    <h3>التصنيفات</h3>
+                    <ul class="navbar-nav ">
+                        <li><a href="">الهواتف</a></li>
+                        <li><a href="">الحواسيب</a></li>
+                        <li><a href="">الاكسسوارات</a></li>
+                        <li><a href="">الساعات</a></li>
+                        <li><a href="">السماعات</a></li>
+                    </ul>
+                </div>
+                <div class="col f4 mb-3">
+                    <h3>النشرة البريدية</h3>
+                    <p>اشترك في النشرة البريدية لمتجرنا لتحصل على عروض حصرية وتخفيضات مميزة وأخبار جديدة أولاً دائماً
+                    </p>
+                    <form action="">
+                        <input type="text" placeholder="الرجاء ادخال البريد" class="form-control mb-3">
+                        <button class="btn btn-danger w-100 mb-5">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 mt-3">
+                <div class="col">
+
+                    <img src="image/payments.png" alt="">
+                </div>
+                <div class="col d-flex justify-content-end">
+                    <p class="text-white text-center ">متجر السلام للأدوات الالكترونية 2025 جميع الحقوق محفوظة</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer-->
+
+
+
+
+    <!-- start modal -->
+    <!-- start quick view -->
+    <div class="modal fade" id="quick-products" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">سامسونغ s23</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="col ">
+                            <img class="img-fluid" src="image/products/7.jpg" alt="s23">
+                            <button class="btn btn-primary w-100">كافة التفاصيل</button>
+                        </div>
+                        <div class="col">
+                            <img width="40%" src="image/samsung.png" alt="">
+                            <h1 class="modal-title fs-5 my-3"> لون فضي سامسونغ s23</h1>
+                            <p class="product-discription">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium tenetur
+                                tempora
+                                fuga consequuntur. Nam recusandae veniam amet! Obcaecati, nesciunt facere.
+                            </p>
+                            <div class="quick-reviews">
+                                <span>تقييمات المستخدمين :</span>
+                                <div class="stars mb-2 d-inline-flex mb-3">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <div class="price mb-3">
+                                    <span>السعر 250$</span>
+                                    <span>السعر 400$</span>
+                                </div>
+
+                                <div class="btns d-flex gap-2">
+                                    <div class="btn-group btns-quantity">
+                                        <button class="btn ">+</button>
+                                        <button class="btn ">1</button>
+                                        <button class="btn ">-</button>
+                                    </div>
+                                    <div class="d-flex gap-1 add-btn">
+                                        <button class="btn btn-danger">اضافة الى السلة</button>
+                                        <button class=" btn btn-success">شراء الان</button>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="category mb-3">
+                                    <span>التصنيفات:</span>
+                                    <a href="">جوالات السامسونغ</a>
+                                </div>
+
+                                <div class="share">
+                                    <span>المشاركة</span>
+                                    <div class="share-icons d-inline-flex gap-2">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        <i class="fa-brands fa-instgram"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end quick view -->
+
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Hide this modal and show the first with the button below.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#quick-products" data-bs-toggle="modal">Back
+                        to first</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end-modal -->
+
+    <!-- start- offcanvas-->
+    <!-- cart -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cart">سلة المشتريات</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class=" row-min-card">
+                <div class=" mini-card d-flex justify-content-between align-items-center">
+                    <img class="img-fluid w-25 " src="image/products/7.jpg" alt="">
+                    <p>سامسونغ s23 </p>
+
+                    <div class="btn-group btns-quantity-mini">
+                        <button class="btn ">+</button>
+                        <button class="btn ">1</button>
+                        <button class="btn ">-</button>
+                    </div>
+
+                </div>
+                <div class=" mini-card d-flex justify-content-between align-items-center">
+                    <img class="img-fluid w-25" src="image/products/8.jpg" alt="">
+                    <p>سامسونغ s23 </p>
+
+                    <div class="btn-group btns-quantity-mini">
+                        <button class="btn ">+</button>
+                        <button class="btn ">1</button>
+                        <button class="btn ">-</button>
+                    </div>
+                </div>
+
+                <div class=" mini-card d-flex justify-content-between align-items-center">
+                    <img class="img-fluid w-25" src="image/products/6.jpg" alt="">
+                    <p>سامسونغ s23 </p>
+
+                    <div class="btn-group btns-quantity-mini">
+                        <button class="btn ">+</button>
+                        <button class="btn ">1</button>
+                        <button class="btn ">-</button>
+                    </div>
+
+                </div>
+                <div class=" mini-card d-flex justify-content-between align-items-center">
+                    <img class="img-fluid w-25" src="image/products/5.jpg" alt="">
+                    <p>سامسونغ s23 </p>
+
+                    <div class="btn-group btns-quantity-mini">
+                        <button class="btn ">+</button>
+                        <button class="btn ">1</button>
+                        <button class="btn ">-</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="d-flex flex-column gap-3">
+                <p class="alert alert-danger p-3 my-3 text-center">مجموع المنتجات 250$ فقط</p>
+                <a href="cart.html">
+                    <button class="btn btn-primary w-100 mb-2">عرض السلة</button>
+
+                </a>
+                <button class="btn btn-danger w-100">اتمام الطلب</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- filter -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="filter" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cart"> الفلترة </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="filter-section sticky-lg-top">
+                <h4 class="filter-title">فلترة بالبحث</h4>
+                <input type="text" class="form-control">
+                <select name="" id="" class="form-select mt-3">
+
+                    <option value="">الحواسيب</option>
+                    <option value="">الحواسيب</option>
+                    <option value="">الحواسيب</option>
+                    <option value="">الحواسيب</option>
+                    <option value="">الحواسيب</option>
+                    <option value="">الحواسيب</option>
+                </select>
+                <hr>
+
+
+                <h4 class="filter-title">فلترة حسب الشركة</h4>
+                <div class="filter-radio d-flex flex-column gap-2">
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونغ</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">شاومي</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">ايفون</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونغ</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونغ</label>
+                    </div>
+                </div>
+                <h4 class="filter-title mt-3">فلترة حسب النوع</h4>
+                <div class="filter-radio d-flex flex-column gap-2">
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونغ</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">شاومي</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">ايفون</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونغ</label>
+                    </div>
+                    <div>
+                        <input name="category" type="radio" class="form-check-input">
+                        <label for="" class="form-label">سامسونغ</label>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <!-- login -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="login" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="login">تسجيل الدخول</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+
+
+            <div class="mini-login">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">اسم المستخدم او البريد</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">كلمة المرور </label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">تذكر بياناتي</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">تسجيل الدخول</button>
+                </form>
+
+                <div class="alert alert-danger my-3 text-center">
+                    <a href="#">انقر هنا في حال نسيت كلمة المرور</a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="text-center mt-5">
+                <i class="fa-regular fa-user fa-5x "></i>
+                <p>لا يوجد لديك حساب؟</p>
+                <a href="" class="btn btn-danger w-100 text-white ">انشاء حساب جديد</a>
+            </div>
+        </div>
+    </div>
+    <!-- end- offcanvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
